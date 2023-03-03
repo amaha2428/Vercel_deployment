@@ -1,8 +1,10 @@
 from flask import Flask, render_template, request
+from flask_compress import Compress
 import pickle
 
 
 app = Flask(__name__, template_folder = 'templates', static_folder = 'static')
+compress = Compress(app)
 
 model = pickle.load(open('Diabetes_model.pkl', 'rb'))
 
