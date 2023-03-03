@@ -12,11 +12,9 @@
 <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">  
 </head>
 <body>
-    
     <div class="cover">  
         <h1>Diabetise Test</h1>
     <form action="{{ url_for('predict')}}"method="post" class="form">
-
     <div class="formBackground">
       <div class="modal">
         <div class="textfield">
@@ -35,20 +33,18 @@
             <input type="number" name = "IL"  placeholder="Insulin Level" required>
         </div>
         <div class="textfield">
-            <input type="number" name = "BMI" placeholder="BMI" required>
+            <input type="number" step="0.01" name = "BMI" placeholder="BMI" required>
         </div>
         <div class="textfield">
-            <input type="number" name = "DPF" placeholder="Diabetes Pedigree Function" required>
+            <input type="number" step="0.01" name = "DPF" placeholder="Diabetes Pedigree Function" required>
         </div>
         <div class="textfield">
             <input type="number" name = "AGE"  placeholder="Age" required>
         </div> 
         <br><br>
-
         <button type="submit" value="submit" class="submitBtn">Submit</button>
     </div>  
      </div>
-    
   </form>
     <div class="predict">
         <h2>
