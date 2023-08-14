@@ -1,2 +1,6 @@
 Flask==2.0.3
 gunicorn==20.1.0
+scikit-learn==1.0.2
+Flask-Compress
+pandas
+numpy
